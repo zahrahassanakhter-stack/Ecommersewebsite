@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin: 0 50px;
+}
+.searchbar {
+  border: 2px solid rgb(88, 88, 253);
+  display: flex;
+  border-radius: 10px;
+  width: 50%;
+}
+.searchbar .valuefield {
+  width: 60%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 0;
+  outline: 0;
+}
+.searchbar .dropdown {
+  width: 20%;
+  outline: 0;
+  border-left: 1px solid rgb(88, 88, 253);
+}
+.searchbar .searchbtn {
+  width: 20%;
+  background: rgb(88, 88, 253);
+  color: white;
+  border: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.searchbar input,
+.searchbtn {
+  margin: 0;
+  padding: 10px;
+}
+.navbar {
+  width: 20%;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(145, 142, 142);
+  font-size: 15px;
+}
+.navbar ul li .allicons {
+  color: rgb(145, 142, 142);
+}
+footer {
+  background: white;
+  height: auto;
+}
+.footerlinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 50px;
+  border: 1px solid black;
+}
+.footerlinks p,
+img {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  color: grey;
+}
+.footerlinks .heading {
+  color: black;
+  padding-bottom: 5px;
+}
+.first-block ul {
+  display: flex;
+  gap: 10px;
+  margin-left: 5px;
+}
+.first-block ul li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+.first-block ul li a {
+  font-size: 12px;
+  background: grey;
+  border-radius: 50%;
+  padding: 5px;
+
+  color: white;
+}
+
+.copywrite {
+  background-color: grey;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.copywrite .lang {
+  display: flex;
+}
+.copywrite select {
+  background: transarent;
+}
