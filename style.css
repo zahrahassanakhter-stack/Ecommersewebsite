@@ -19,10 +19,12 @@ body {
 }
 /*  header*/
 header {
+  max-width: var(--max-width);
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
   margin: 0 auto;
 }
 .searchbar {
@@ -81,7 +83,8 @@ header {
 }
 /* nav */
 nav {
-  margin: 10px 40px;
+  max-width: var(--max-width);
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -105,11 +108,10 @@ nav .rightnav {
 }
 /* list section 1st div in banner boc */
 
-.listsection {
-  width: 220px;
+.bannerbox .listsection {
   height: 360px;
   display: flex;
-  flex: 0 0 220px;
+  flex: 1;
   flex-direction: column;
 }
 
@@ -121,11 +123,13 @@ nav .rightnav {
 .listsection ul li a {
   text-decoration: none;
   color: #505050;
+  font-weight: 400;
   font-size: 16px;
 }
 /* 2nd div of bannerbox */
 .banner {
-  flex: 1;
+  max-width: 665px;
+
   position: relative;
 }
 .banner img {
@@ -206,7 +210,7 @@ nav .rightnav {
   border: 1px solid grey;
   border-radius: 6px;
 }
-/* discount */
+/* 2nd discount box of bannerbox*/
 .discountbox {
   height: 95px;
   border-radius: 6px;
@@ -336,6 +340,7 @@ nav .rightnav {
   top: 20px;
 }
 .home-bg .homebtn {
+  width: 123px;
   position: absolute;
   left: 20px;
   top: 80px;
@@ -385,10 +390,12 @@ nav .rightnav {
 }
 
 .consumer-bg {
+  flex: 1;
   position: relative;
 }
 .consumer-bg img {
   flex: 1;
+  object-fit: cover;
   height: 257px;
 }
 .consumer-bg h4 {
@@ -398,6 +405,7 @@ nav .rightnav {
   top: 20px;
 }
 .consumer-bg .Consumerbtn {
+  width: 123px;
   position: absolute;
   top: 100px;
   left: 20px;
@@ -409,7 +417,7 @@ nav .rightnav {
   background: white;
 }
 .consumers-gridbox {
-  width: 850px;
+  width: var(--half-width);
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
@@ -498,13 +506,14 @@ button {
 }
 /* recommended item section */
 #main-heading {
-  margin: 0 80px;
-  padding: 0;
+  padding-bottom: 10px;
 }
 .recomended-item {
   width: 100%;
   max-width: var(--max-width);
   margin: 20px auto;
+}
+.nested {
   display: grid;
   gap: 20px;
   grid-template-rows: repeat(2, 1fr);
@@ -647,6 +656,7 @@ footer {
   height: auto;
 }
 .footerlinks {
+  margin: auto;
   display: flex;
   justify-content: space-around;
   padding: 50px;
