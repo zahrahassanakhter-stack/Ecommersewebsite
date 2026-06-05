@@ -18,7 +18,9 @@
     <!-- header section -->
     <header>
       <div class="brandname">
-        <img src="assets/layout/Brand/logo-colored.png" alt="" />
+        <a href="index.html">
+          <img src="assets/layout/Brand/logo-colored.png" alt="" />
+        </a>
       </div>
       <div class="searchbar">
         <input
@@ -29,52 +31,58 @@
         />
         <select name="Category" class="dropdown">
           <option value="">All Category</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
+          <option value="">Electronics</option>
+          <option value="">Fashion</option>
+          <option value="">Home</option>
         </select>
         <button class="searchbtn">Search</button>
       </div>
+
       <div class="navbar">
         <ul>
           <li>
-            <i class="fa-solid fa-user allicons"></i><a href="">Profile</a>
+            <i class="fa-solid fa-user allicons"></i>
+            <a href="index.html">Profile</a>
           </li>
+
           <li>
             <i class="fa-solid fa-message allicons"></i>
-            <a href="">Massage</a>
+            <a href="details.html">Message</a>
           </li>
+
           <li>
-            <i class="fa-solid fa-heart allicons"></i><a href="">Order</a>
+            <i class="fa-solid fa-heart allicons"></i>
+            <a href="details.html">Order</a>
           </li>
+
           <li>
             <i class="fa-solid fa-cart-shopping allicons"></i>
-            <a href="">My cart</a>
+            <a href="detailpart.html">My Cart</a>
           </li>
         </ul>
       </div>
     </header>
+
     <!-- nav -->
     <nav>
       <div class="rightnav">
-        <i class="fa-solid fa-bars"></i><span>All Category</span
-        ><span>Hot Offers</span><span>Gift Boxes</span><span>Projects</span
-        ><span>Menu Items</span><span>Help</span>
+        <i class="fa-solid fa-bars"></i>
+        <a href="productgrid.html">All Category</a>
+        <a href="product.html">Hot Offers</a>
+        <a href="details.html">Gift Boxes</a>
+        <a href="detailpart.html">Projects</a>
+        <a href="productgrid.html">Menu Items</a>
+        <a href="details.html">Help</a>
       </div>
       <div class="leftnav">
-        <select name="" id="">
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
+        <select name="">
+          <option>English</option>
+          <option>Urdu</option>
         </select>
-
-        <select name="" id="">
-          Ship to
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
+        <select name="">
+          <option>Ship to USA</option>
+          <option>Ship to UK</option>
+          <option>Ship to Pakistan</option>
         </select>
       </div>
     </nav>
@@ -86,317 +94,343 @@
       ><a href="">Summer Clothing <i class="fa-solid fa-angle-right"></i></a>
     </section>
     <!-- section productt listing -->
-    <section class="product-section">
-      <div class="catagories">
-        <section class="catagory">
-          <div class="heading-section">
-            <h3>Catagory</h3>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
+    <section class="allproductflex">
+      <div class="product-section">
+        <div class="catagories">
+          <section class="catagory">
+            <div class="heading-section">
+              <h3>Catagory</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
 
-          <ul>
-            <li>
-              <a href="">Mobile accessory</a>
-            </li>
-            <li><a href="">Electronics</a></li>
-            <li><a href="">Smart Phones</a></li>
-            <li><a href="">Modern Tech</a></li>
-            <li><a href="" id="lastlink">See All</a></li>
-          </ul>
-        </section>
-        <section class="brand">
-          <div class="heading-section">
-            <h3>Brand</h3>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div><input type="checkbox" />Samsung</div>
-          <div><input type="checkbox" />Apple</div>
-          <div><input type="checkbox" />Huawei</div>
-          <div><input type="checkbox" />Pocco</div>
-          <div><input type="checkbox" />Lenovo</div>
-          <a href="">See all</a>
-        </section>
-        <section class="Feature">
-          <div class="heading-section">
-            <h3>Feature</h3>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div><input type="checkbox" />Metallic</div>
-          <div><input type="checkbox" />Plastic cover</div>
-          <div><input type="checkbox" />8GB Ram</div>
-          <div><input type="checkbox" />Super power</div>
-          <div><input type="checkbox" />Large Memory</div>
-          <a href="">See all</a>
-        </section>
-        <section class="pricerange">
-          <div class="heading-section">
-            <h3>Price Range</h3>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <input type="range" min="0" max="100" step="1" />
-          <div class="maxmin">
-            <div class="max">
-              <p>Max</p>
-              <input type="text" placeholder="0" />
+            <ul>
+              <li>
+                <a href="">Mobile accessory</a>
+              </li>
+              <li><a href="">Electronics</a></li>
+              <li><a href="">Smart Phones</a></li>
+              <li><a href="">Modern Tech</a></li>
+              <li><a href="" id="lastlink">See All</a></li>
+            </ul>
+          </section>
+          <section class="brand">
+            <div class="heading-section">
+              <h3>Brand</h3>
+              <i class="fa-solid fa-angle-down"></i>
             </div>
-            <div class="min">
-              <p>Min</p>
-              <input type="text" placeholder="9999" />
+            <div><input type="checkbox" />Samsung</div>
+            <div><input type="checkbox" />Apple</div>
+            <div><input type="checkbox" />Huawei</div>
+            <div><input type="checkbox" />Pocco</div>
+            <div><input type="checkbox" />Lenovo</div>
+            <a href="">See all</a>
+          </section>
+          <section class="Feature">
+            <div class="heading-section">
+              <h3>Feature</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div><input type="checkbox" />Metallic</div>
+            <div><input type="checkbox" />Plastic cover</div>
+            <div><input type="checkbox" />8GB Ram</div>
+            <div><input type="checkbox" />Super power</div>
+            <div><input type="checkbox" />Large Memory</div>
+            <a href="">See all</a>
+          </section>
+          <section class="pricerange">
+            <div class="heading-section">
+              <h3>Price Range</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <input type="range" min="0" max="100" step="1" />
+            <div class="maxmin">
+              <div class="max">
+                <p>Max</p>
+                <input type="text" placeholder="0" />
+              </div>
+              <div class="min">
+                <p>Min</p>
+                <input type="text" placeholder="9999" />
+              </div>
+            </div>
+            <button class="minmaxbtn">Apply</button>
+          </section>
+          <section class="Condition">
+            <div class="heading-section">
+              <h3>condition</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div><input type="radio" />Any</div>
+            <div><input type="radio" />Refurbished</div>
+            <div><input type="radio" />Brand new</div>
+            <div><input type="radio" />Old items</div>
+          </section>
+          <section class="Rating">
+            <div class="heading-section">
+              <h3>Rating</h3>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="rating">
+              <input type="checkbox" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="rating">
+              <input type="checkbox" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="rating">
+              <input type="checkbox" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="rating">
+              <input type="checkbox" />
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </section>
+        </div>
+        <!-- flex 2 -->
+        <div class="feature-and-accesories">
+          <div class="FEATURESOFPODUCCT">
+            <p>12,911 items in <b> Mobile accessory</b></p>
+            <div class="rightsidefeture">
+              <div><input type="checkbox" checked />Vrified only</div>
+              <select name="features" id="feature">
+                <option value="">Featured only</option>
+              </select>
+              <div id="twobox">
+                <a
+                  style="text-decoration: none; color: black"
+                  href="productgrid.html"
+                  ><i class="fa-solid fa-table-cells"></i
+                ></a>
+                <a
+                  style="text-decoration: none; color: black"
+                  href="product.html"
+                  ><i class="fa-solid fa-bars"></i
+                ></a>
+              </div>
             </div>
           </div>
-          <button class="minmaxbtn">Apply</button>
-        </section>
-        <section class="Condition">
-          <div class="heading-section">
-            <h3>condition</h3>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div><input type="radio" />Any</div>
-          <div><input type="radio" />Refurbished</div>
-          <div><input type="radio" />Brand new</div>
-          <div><input type="radio" />Old items</div>
-        </section>
-        <section class="Rating">
-          <div class="heading-section">
-            <h3>Rating</h3>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div class="rating">
-            <input type="checkbox" />
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <div class="rating">
-            <input type="checkbox" />
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <div class="rating">
-            <input type="checkbox" />
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <div class="rating">
-            <input type="checkbox" />
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-        </section>
-      </div>
-      <!-- flex 2 -->
-      <div class="feature-and-accesories">
-        <div class="FEATURESOFPODUCCT">
-          <p>12,911 items in <b> Mobile accessory</b></p>
-          <div class="rightsidefeture">
-            <div><input type="checkbox" checked />Vrified only</div>
-            <select name="features" id="feature">
-              <option value="">Featured only</option>
-            </select>
-            <div id="twobox">
-              <i class="fa-notdog fa-solid fa-grid"></i>
-              <i class="fa-solid fa-bars"></i>
+          <div class="product-listview">
+            <div class="products">
+              <div class="product-img">
+                <img src="assets/Image/tech/image 33.png" alt="phone" />
+              </div>
+              <div class="product-information">
+                <p>Canon Cmera EOS 2000, Black 10x zoom</p>
+                <div class="spandiv">
+                  <span id="amount">$998.00</span><span>$1128.00</span>
+                  <div class="spandivtwo">
+                    <span class="star"
+                      ><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>7.5</span
+                    ><span class="orders">154 orders</span
+                    ><span class="shipping">Free Shiping</span>
+                  </div>
+                </div>
+                <div class="details-product">
+                  <p class="details">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod <br />
+                    tempor incididunt ut labore et dolore magna aliqua
+                  </p>
+                  <span class="seedetails">View details</span>
+                </div>
+              </div>
+            </div>
+            <div class="products">
+              <div class="product-img">
+                <img src="assets/Image/tech/image 32.png" alt="phone" />
+              </div>
+              <div class="product-information">
+                <p>Canon Cmera EOS 2000, Black 10x zoom</p>
+                <div class="spandiv">
+                  <span id="amount">$998.00</span>
+                  <div class="spandivtwo">
+                    <span class="star"
+                      ><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>7.5</span
+                    ><span class="orders">154 orders</span
+                    ><span class="shipping">Free Shiping</span>
+                  </div>
+                </div>
+                <div class="details-product">
+                  <p class="details">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip <br />
+                    ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit
+                  </p>
+                  <span class="seedetails">View details</span>
+                </div>
+              </div>
+            </div>
+            <div class="products">
+              <div class="product-img">
+                <img src="assets/Image/tech/image 23.png" alt="hone" />
+              </div>
+              <div class="product-information">
+                <p>Canon Cmera EOS 2000, Black 10x zoom</p>
+                <div class="spandiv">
+                  <span id="amount">$998.00</span>
+                  <div class="spandivtwo">
+                    <span class="star"
+                      ><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>7.5</span
+                    ><span class="orders">154 orders</span
+                    ><span class="shipping">Free Shiping</span>
+                  </div>
+                </div>
+                <div class="details-product">
+                  <p class="details">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip <br />
+                    ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit
+                  </p>
+                  <span class="seedetails">View details</span>
+                </div>
+              </div>
+            </div>
+            <div class="products">
+              <div class="product-img">
+                <img src="assets/Image/tech/image 34.png" alt="laptop" />
+              </div>
+              <div class="product-information">
+                <p>Canon Cmera EOS 2000, Black 10x zoom</p>
+                <div class="spandiv">
+                  <span id="amount">$998.00</span>
+                  <div class="spandivtwo">
+                    <span class="star"
+                      ><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>7.5</span
+                    ><span class="orders">154 orders</span
+                    ><span class="shipping">Free Shiping</span>
+                  </div>
+                </div>
+                <div class="details-product">
+                  <p class="details">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip <br />
+                    ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit
+                  </p>
+                  <span class="seedetails">View details</span>
+                </div>
+              </div>
+            </div>
+            <div class="products">
+              <div class="product-img">
+                <img src="assets/Image/tech/8.png" alt="watch" />
+              </div>
+              <div class="product-information">
+                <p>Canon Cmera EOS 2000, Black 10x zoom</p>
+                <div class="spandiv">
+                  <span id="amount">$998.00</span>
+                  <div class="spandivtwo">
+                    <span class="star"
+                      ><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>7.5</span
+                    ><span class="orders">154 orders</span
+                    ><span class="shipping">Free Shiping</span>
+                  </div>
+                </div>
+                <div class="details-product">
+                  <p class="details">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip <br />
+                    ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit
+                  </p>
+                  <span class="seedetails">View details</span>
+                </div>
+              </div>
+            </div>
+            <div class="products">
+              <div class="product-img">
+                <img src="assets/Image/tech/image 86.png" alt="headphones" />
+              </div>
+              <div class="product-information">
+                <p>Canon Cmera EOS 2000, Black 10x zoom</p>
+                <div class="spandiv">
+                  <span id="amount">$998.00</span>
+                  <div class="spandivtwo">
+                    <span class="star"
+                      ><i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i> 7.5</span
+                    ><span class="orders"
+                      ><ul>
+                        <li>154 orders</li>
+                      </ul></span
+                    ><span class="shipping"
+                      ><ul>
+                        <li>Free Shiping</li>
+                      </ul>
+                    </span>
+                  </div>
+                </div>
+                <div class="details-product">
+                  <p class="details">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip <br />
+                    ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit
+                  </p>
+                  <span class="seedetails">View details</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="product-listview">
-          <div class="products">
-            <div class="product-img">
-              <img src="assets/Image/tech/image 33.png" alt="phone" />
-            </div>
-            <div class="product-information">
-              <p>Canon Cmera EOS 2000, Black 10x zoom</p>
-              <div class="spandiv">
-                <span id="amount">$998.00</span><span>$1128.00</span>
-                <div class="spandivtwo">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>7.5</span
-                  ><span class="orders">154 orders</span
-                  ><span class="shipping">Free Shiping</span>
-                </div>
-              </div>
-              <div class="details-product">
-                <p class="details">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod <br />
-                  tempor incididunt ut labore et dolore magna aliqua
-                </p>
-                <span class="seedetails">View details</span>
-              </div>
-            </div>
-          </div>
-          <div class="products">
-            <div class="product-img">
-              <img src="assets/Image/tech/image 32.png" alt="phone" />
-            </div>
-            <div class="product-information">
-              <p>Canon Cmera EOS 2000, Black 10x zoom</p>
-              <div class="spandiv">
-                <span id="amount">$998.00</span>
-                <div class="spandivtwo">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>7.5</span
-                  ><span class="orders">154 orders</span
-                  ><span class="shipping">Free Shiping</span>
-                </div>
-              </div>
-              <div class="details-product">
-                <p class="details">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip <br />
-                  ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit
-                </p>
-                <span class="seedetails">View details</span>
-              </div>
-            </div>
-          </div>
-          <div class="products">
-            <div class="product-img">
-              <img src="assets/Image/tech/image 23.png" alt="hone" />
-            </div>
-            <div class="product-information">
-              <p>Canon Cmera EOS 2000, Black 10x zoom</p>
-              <div class="spandiv">
-                <span id="amount">$998.00</span>
-                <div class="spandivtwo">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>7.5</span
-                  ><span class="orders">154 orders</span
-                  ><span class="shipping">Free Shiping</span>
-                </div>
-              </div>
-              <div class="details-product">
-                <p class="details">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip <br />
-                  ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit
-                </p>
-                <span class="seedetails">View details</span>
-              </div>
-            </div>
-          </div>
-          <div class="products">
-            <div class="product-img">
-              <img src="assets/Image/tech/image 34.png" alt="laptop" />
-            </div>
-            <div class="product-information">
-              <p>Canon Cmera EOS 2000, Black 10x zoom</p>
-              <div class="spandiv">
-                <span id="amount">$998.00</span>
-                <div class="spandivtwo">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>7.5</span
-                  ><span class="orders">154 orders</span
-                  ><span class="shipping">Free Shiping</span>
-                </div>
-              </div>
-              <div class="details-product">
-                <p class="details">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip <br />
-                  ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit
-                </p>
-                <span class="seedetails">View details</span>
-              </div>
-            </div>
-          </div>
-          <div class="products">
-            <div class="product-img">
-              <img src="assets/Image/tech/8.png" alt="watch" />
-            </div>
-            <div class="product-information">
-              <p>Canon Cmera EOS 2000, Black 10x zoom</p>
-              <div class="spandiv">
-                <span id="amount">$998.00</span>
-                <div class="spandivtwo">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>7.5</span
-                  ><span class="orders">154 orders</span
-                  ><span class="shipping">Free Shiping</span>
-                </div>
-              </div>
-              <div class="details-product">
-                <p class="details">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip <br />
-                  ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit
-                </p>
-                <span class="seedetails">View details</span>
-              </div>
-            </div>
-          </div>
-          <div class="products">
-            <div class="product-img">
-              <img src="assets/Image/tech/image 86.png" alt="headphones" />
-            </div>
-            <div class="product-information">
-              <p>Canon Cmera EOS 2000, Black 10x zoom</p>
-              <div class="spandiv">
-                <span id="amount">$998.00</span>
-                <div class="spandivtwo">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i> 7.5</span
-                  ><span class="orders"
-                    ><ul>
-                      <li>154 orders</li>
-                    </ul></span
-                  ><span class="shipping"
-                    ><ul>
-                      <li>Free Shiping</li>
-                    </ul>
-                  </span>
-                </div>
-              </div>
-              <div class="details-product">
-                <p class="details">
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip <br />
-                  ex ea commodo consequat. Duis aute irure dolor in
-                  reprehenderit
-                </p>
-                <span class="seedetails">View details</span>
-              </div>
-            </div>
-          </div>
+      </div>
+
+      <div class="pagination-wrapper">
+        <select class="show-items">
+          <option>Show 10</option>
+          <option>Show 20</option>
+          <option>Show 30</option>
+        </select>
+
+        <div class="pagination">
+          <button class="page-btn">&lt;</button>
+          <button class="page-number active">1</button>
+          <button class="page-number">2</button>
+          <button class="page-number">3</button>
+          <button class="page-btn">&gt;</button>
         </div>
       </div>
     </section>
@@ -421,62 +455,68 @@
     <footer>
       <div class="footerlinks">
         <div class="first-block">
-          <img src="assets/Layout/Brand/logo-colored.png" alt="benadname" />
+          <a href="index.html">
+            <img src="assets/Layout/Brand/logo-colored.png" alt="brandname" />
+          </a>
           <p>
-            Best information about the company gies <br />here but now lorem
-            ipsum is
+            Best information about the company goes
+            <br />
+            here but now lorem ipsum is
           </p>
           <ul class="iconlist">
             <li>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
-              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </li>
             <li>
-              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
             </li>
             <li>
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </li>
             <li>
-              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </li>
           </ul>
         </div>
         <div>
           <p class="heading">About</p>
-          <p>About us</p>
-          <p>Features</p>
-          <p>Catagories</p>
-          <p>Blogs</p>
+          <p><a href="details.html">About Us</a></p>
+          <p><a href="product.html">Features</a></p>
+          <p><a href="productgrid.html">Categories</a></p>
+          <p><a href="detailpart.html">Blogs</a></p>
         </div>
-
         <div>
           <p class="heading">Partnership</p>
-          <p>About us</p>
-          <p>Find store</p>
-          <p>Categories</p>
-          <p>Blogs</p>
+          <p><a href="details.html">About Us</a></p>
+          <p><a href="productgrid.html">Find Store</a></p>
+          <p><a href="product.html">Categories</a></p>
+          <p><a href="detailpart.html">Blogs</a></p>
         </div>
         <div>
           <p class="heading">Information</p>
-          <p>Help center</p>
-          <p>Money Refund</p>
-          <p>Shipping</p>
-          <p>Contact us</p>
+          <p><a href="details.html">Help Center</a></p>
+          <p><a href="product.html">Money Refund</a></p>
+          <p><a href="productgrid.html">Shipping</a></p>
+          <p><a href="index.html">Contact Us</a></p>
         </div>
         <div>
-          <p class="heading">For users</p>
-          <p>Login</p>
-          <p>Register</p>
-          <p>Setting</p>
-          <p>My orders</p>
+          <p class="heading">For Users</p>
+          <p><a href="details.html">Login</a></p>
+          <p><a href="details.html">Register</a></p>
+          <p><a href="detailpart.html">Settings</a></p>
+          <p><a href="product.html">My Orders</a></p>
         </div>
         <div>
-          <p class="heading">Get app</p>
-          <img src="assets/layout/Misc/Group.png" alt="misc" />
-          <img src="assets/Layout/Misc/market-button.png" alt="misc" />
+          <p class="heading">Get App</p>
+          <a href="#">
+            <img src="assets/layout/Misc/Group.png" alt="misc" />
+          </a>
+          <a href="#">
+            <img src="assets/Layout/Misc/market-button.png" alt="misc" />
+          </a>
         </div>
       </div>
       <div class="copywrite">
@@ -492,10 +532,19 @@
             <option value="hn">Hindi</option>
             <option value="ur">Urdu</option>
             <option value="fr">French</option>
-            <option value="gr">Germany</option>
+            <option value="gr">German</option>
           </select>
         </div>
       </div>
     </footer>
+    <script>
+      const pages = document.querySelectorAll(".page-number");
+      pages.forEach((page) => {
+        page.addEventListener("click", () => {
+          pages.forEach((p) => p.classList.remove("active"));
+          page.classList.add("active");
+        });
+      });
+    </script>
   </body>
 </html>

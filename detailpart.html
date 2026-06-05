@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkoutt</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/254f436bca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <div class="brandname">
+        <a href="index.html">
+          <img src="assets/layout/Brand/logo-colored.png" alt="" />
+        </a>
+      </div>
+      <div class="searchbar">
+        <input
+          type="text"
+          name="serachfield"
+          class="valuefield"
+          placeholder="Search"
+        />
+        <select name="Category" class="dropdown">
+          <option value="">All Category</option>
+          <option value="">Electronics</option>
+          <option value="">Fashion</option>
+          <option value="">Home</option>
+        </select>
+        <button class="searchbtn">Search</button>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li>
+            <i class="fa-solid fa-user allicons"></i>
+            <a href="index.html">Profile</a>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-message allicons"></i>
+            <a href="details.html">Message</a>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-heart allicons"></i>
+            <a href="details.html">Order</a>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-cart-shopping allicons"></i>
+            <a href="detailpart.html">My Cart</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cartsection">
+      <div class="cartitems">
+        <h2>My cart (3)</h2>
+        <div class="cartproduct">
+          <div class="productleft">
+            <img src="assets/Layout/alibaba/Image/cloth/Bitmap.png" alt="" />
+            <div>
+              <h4>T-shirts with multiple colors, for men and lady</h4>
+              <p>Size: medium, Color: blue, Material: Plastic</p>
+              <p>Seller: Artel Market</p>
+              <div class="btns">
+                <button class="removebtn">Remove</button>
+                <button class="savebtn">Save for later</button>
+              </div>
+            </div>
+          </div>
+          <div class="productright">
+            <h4>$78.99</h4>
+            <select>
+              <option>Qty: 1</option>
+              <option>Qty: 2</option>
+              <option>Qty: 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="cartproduct">
+          <div class="productleft">
+            <img
+              src="assets/Layout/alibaba/Image/cloth/blackshirt.jpg"
+              alt="shirt"
+            />
+            <div>
+              <h4>T-shirts with multiple colors, for men and lady</h4>
+              <p>Size: medium, Color: blue, Material: Plastic</p>
+              <p>Seller: Best factory LLC</p>
+              <div class="btns">
+                <button class="removebtn">Remove</button>
+                <button class="savebtn">Save for later</button>
+              </div>
+            </div>
+          </div>
+          <div class="productright">
+            <h4>$39.00</h4>
+            <select>
+              <option>Qty: 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="cartproduct">
+          <div class="productleft">
+            <img src="assets/Layout/alibaba/Image/cloth/blue.jpg" alt="shirt" />
+            <div>
+              <h4>T-shirts with multiple colors, for men and lady</h4>
+              <p>Size: medium, Color: blue, Material: Plastic</p>
+              <p>Seller: Artel Market</p>
+              <div class="btns">
+                <button class="removebtn">Remove</button>
+                <button class="savebtn">Save for later</button>
+              </div>
+            </div>
+          </div>
+          <div class="productright">
+            <h4>$170.50</h4>
+            <select>
+              <option>Qty: 1</option>
+            </select>
+          </div>
+        </div>
+        <div class="cartfooter">
+          <button class="backbtn">Back to shop</button>
+          <button class="removeall">Remove all</button>
+        </div>
+      </div>
+      <div class="ordersummary">
+        <div class="couponbox">
+          <p>Have a coupon?</p>
+          <div class="couponfield">
+            <input type="text" placeholder="Add coupon" />
+            <button>Apply</button>
+          </div>
+        </div>
+        <div class="pricecard">
+          <div class="priceitem">
+            <span>Subtotal:</span>
+            <span>$1403.97</span>
+          </div>
+          <div class="priceitem">
+            <span>Discount:</span>
+            <span class="red">-$60.00</span>
+          </div>
+          <div class="priceitem">
+            <span>Tax:</span>
+            <span class="green">+$14.00</span>
+          </div>
+          <div class="priceitem total">
+            <span>Total:</span>
+            <span>$1357.97</span>
+          </div>
+          <button class="checkoutbtn">Checkout</button>
+          <div class="paymenticons">
+            <img
+              src="assets/Image/backgrounds/amlogo.png"
+              alt="AMERICAN-EXPRESS"
+            />
+            <img
+              src="assets/Image/backgrounds/MASTERCARLOGO.jpg"
+              alt="MASTERCARD"
+            />
+            <img src="assets/Image/backgrounds/paypal_PNG7.png" alt="PAYPAL" />
+            <img src="assets/Image/backgrounds/visa.png" alt="VISA" />
+            <img src="assets/Image/backgrounds/applelogo.svg" alt="PAY" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="featuresection">
+      <div class="featurebox">
+        <div class="featureicon"><i class="fa-solid fa-lock"></i></div>
+        <div>
+          <h4>Secure payment</h4>
+          <p>Have you ever finally just</p>
+        </div>
+      </div>
+      <div class="featurebox">
+        <div class="featureicon"><i class="fa-solid fa-message"></i></div>
+        <div>
+          <h4>Customer support</h4>
+          <p>Have you ever finally just</p>
+        </div>
+      </div>
+      <div class="featurebox">
+        <div class="featureicon"><i class="fa-solid fa-truck"></i></div>
+        <div>
+          <h4>Free delivery</h4>
+          <p>Have you ever finally just</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Saved For Later -->
+    <section class="savedsection">
+      <h3>Saved for later</h3>
+      <div class="savedproducts">
+        <div class="savedcard">
+          <div class="savecardimg">
+            <img src="assets/Image/tech/image 32.png" alt="phone" />
+          </div>
+          <h4>$99.50</h4>
+          <p>GoPro HERO6 4K Action Camera - Black</p>
+          <div class="cartbtn">
+            <i class="fa-solid fa-cart-shopping"></i>Move to cart
+          </div>
+        </div>
+
+        <div class="savedcard">
+          <div class="savecardimg">
+            <img src="assets/Image/tech/phone.png" alt="phone" />
+          </div>
+          <h4>$99.50</h4>
+          <p>GoPro HERO6 4K Action Camera - Black</p>
+          <div class="cartbtn">
+            <i class="fa-solid fa-cart-shopping"></i>Move to cart
+          </div>
+        </div>
+
+        <div class="savedcard">
+          <div class="savecardimg">
+            <img src="assets/Image/tech/8.png" alt="watch" />
+          </div>
+          <h4>$99.50</h4>
+          <p>GoPro HERO6 4K Action Camera - Black</p>
+          <div class="cartbtn">
+            <i class="fa-solid fa-cart-shopping"></i>Move to cart
+          </div>
+        </div>
+
+        <div class="savedcard">
+          <div class="savecardimg">
+            <img src="assets/Image/tech/image 34.png" alt="laptop" />
+          </div>
+          <h4>$99.50</h4>
+          <p>GoPro HERO6 4K Action Camera - Black</p>
+          <div class="cartbtn">
+            <i class="fa-solid fa-cart-shopping"></i>Move to cart
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discount Banner -->
+    <section class="discountbanner">
+      <div class="bannercontent">
+        <div>
+          <h3>Super discount on more than 100 USD</h3>
+          <p>Have you ever finally just write dummy info</p>
+        </div>
+        <button class="shopbtn">Shop now</button>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+      <div class="footerlinks">
+        <div class="first-block">
+          <a href="index.html">
+            <img src="assets/Layout/Brand/logo-colored.png" alt="brandname" />
+          </a>
+          <p>
+            Best information about the company goes
+            <br />
+            here but now lorem ipsum is
+          </p>
+          <ul class="iconlist">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="heading">About</p>
+          <p><a href="details.html">About Us</a></p>
+          <p><a href="product.html">Features</a></p>
+          <p><a href="productgrid.html">Categories</a></p>
+          <p><a href="detailpart.html">Blogs</a></p>
+        </div>
+        <div>
+          <p class="heading">Partnership</p>
+          <p><a href="details.html">About Us</a></p>
+          <p><a href="productgrid.html">Find Store</a></p>
+          <p><a href="product.html">Categories</a></p>
+          <p><a href="detailpart.html">Blogs</a></p>
+        </div>
+        <div>
+          <p class="heading">Information</p>
+          <p><a href="details.html">Help Center</a></p>
+          <p><a href="product.html">Money Refund</a></p>
+          <p><a href="productgrid.html">Shipping</a></p>
+          <p><a href="index.html">Contact Us</a></p>
+        </div>
+        <div>
+          <p class="heading">For Users</p>
+          <p><a href="details.html">Login</a></p>
+          <p><a href="details.html">Register</a></p>
+          <p><a href="detailpart.html">Settings</a></p>
+          <p><a href="product.html">My Orders</a></p>
+        </div>
+        <div>
+          <p class="heading">Get App</p>
+          <a href="#">
+            <img src="assets/layout/Misc/Group.png" alt="misc" />
+          </a>
+          <a href="#">
+            <img src="assets/Layout/Misc/market-button.png" alt="misc" />
+          </a>
+        </div>
+      </div>
+      <div class="copywrite">
+        <p>&copy; 2023 Ecommerce.</p>
+        <div class="lang">
+          <img
+            class="flagimg"
+            src="assets/Layout1/Image/flags/US@2x.png"
+            alt="flagimg"
+          />
+          <select name="optionselct" id="select">
+            <option value="en">English</option>
+            <option value="hn">Hindi</option>
+            <option value="ur">Urdu</option>
+            <option value="fr">French</option>
+            <option value="gr">German</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // REMOVE ITEM
+      document.querySelectorAll(".removebtn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          this.closest(".cartproduct").remove();
+          alert("Item Removed");
+        });
+      });
+
+      // SAVE FOR LATER
+      document.querySelectorAll(".savebtn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          this.innerText = "Saved ✓";
+          this.disabled = true;
+        });
+      });
+
+      // QTY CHANGE
+      document.querySelectorAll(".productright select").forEach((select) => {
+        select.addEventListener("change", function () {
+          alert("Quantity Updated");
+        });
+      });
+
+      // CHECKOUT
+      const checkoutBtn = document.querySelector(".checkoutbtn");
+      if (checkoutBtn) {
+        checkoutBtn.addEventListener("click", function () {
+          this.innerText = "Order Placed ✓";
+          this.disabled = true;
+        });
+      }
+
+      // BACK TO SHOP
+      const backBtn = document.querySelector(".backbtn");
+      if (backBtn) {
+        backBtn.addEventListener("click", function () {
+          window.location.href = "index.html";
+        });
+      }
+
+      // REMOVE ALL
+      const removeAllBtn = document.querySelector(".removeall");
+      if (removeAllBtn) {
+        removeAllBtn.addEventListener("click", function () {
+          document
+            .querySelectorAll(".cartproduct")
+            .forEach((item) => item.remove());
+          alert("All Items Removed");
+        });
+      }
+
+      // COUPON
+      const couponBtn = document.querySelector(".couponfield button");
+      if (couponBtn) {
+        couponBtn.addEventListener("click", function () {
+          const input = document.querySelector(".couponfield input");
+          if (input && input.value.trim() !== "") {
+            alert("Coupon Applied");
+          } else {
+            alert("Enter Coupon Code");
+          }
+        });
+      }
+
+      // SHOP NOW
+      const shopBtn = document.querySelector(".shopbtn");
+      if (shopBtn) {
+        shopBtn.addEventListener("click", function () {
+          window.location.href = "productgrid.html";
+        });
+      }
+
+      // MOVE TO CART
+      document.querySelectorAll(".cartbtn").forEach((btn) => {
+        btn.addEventListener("click", function () {
+          this.innerHTML = "✓ Added To Cart";
+        });
+      });
+    </script>
+  </body>
+</html>
