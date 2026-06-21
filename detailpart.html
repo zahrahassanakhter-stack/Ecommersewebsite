@@ -14,6 +14,7 @@
     <!-- header section -->
     <header>
       <div class="brandname">
+        <i id="munuitem" onclick="opensidebar()" class="fa-solid fa-bars"></i>
         <a href="index.html">
           <img src="assets/layout/Brand/logo-colored.png" alt="" />
         </a>
@@ -36,23 +37,28 @@
       <div class="navbar">
         <ul>
           <li>
-            <i class="fa-solid fa-user allicons"></i>
-            <a href="index.html">Profile</a>
+            <a href="index.html" class="navlink">
+              <i class="fa-solid fa-user allicons"></i>
+              <span>Profile</span>
+            </a>
           </li>
-
           <li>
-            <i class="fa-solid fa-message allicons"></i>
-            <a href="product.html">Message</a>
+            <a href="product.html" class="navlink">
+              <i class="fa-solid fa-message allicons"></i>
+              <span>Message</span>
+            </a>
           </li>
-
           <li>
-            <i class="fa-solid fa-heart allicons"></i>
-            <a href="details.html">Order</a>
+            <a href="details.html" class="navlink">
+              <i class="fa-solid fa-heart allicons"></i>
+              <span>Order</span>
+            </a>
           </li>
-
           <li>
-            <i class="fa-solid fa-cart-shopping allicons"></i>
-            <a href="detailpart.html">My Cart</a>
+            <a href="detailpart.html" class="navlink">
+              <i class="fa-solid fa-cart-shopping allicons"></i>
+              <span>My Cart</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -132,6 +138,7 @@
           <button class="removeall">Remove all</button>
         </div>
       </div>
+      <!-- coupen  -->
       <div class="ordersummary">
         <div class="couponbox">
           <p>Have a coupon?</p>
@@ -214,7 +221,6 @@
             <i class="fa-solid fa-cart-shopping"></i>Move to cart
           </div>
         </div>
-
         <div class="savedcard">
           <div class="savecardimg">
             <img src="assets/Image/tech/phone.png" alt="phone" />

@@ -12,16 +12,39 @@
       src="https://kit.fontawesome.com/254f436bca.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="stylesheet"
-      href="style.css
-    "
-    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- header section -->
+    <!-- side bar in mobile view section -->
+    <div class="mobile-sidebar">
+      <div class="user-section">
+        <div class="user-icon"><i class="fa-solid fa-user"></i></div>
+        <p><a href="#">Sign in</a> | <a href="#">Register</a></p>
+        <i class="fa-solid fa-xmark" onclick="closesidebar()"></i>
+      </div>
+      <ul class="menu-list">
+        <li><i class="fa-solid fa-house"></i>Home</li>
+        <li><i class="fa-solid fa-list"></i>Categories</li>
+        <li><i class="fa-regular fa-heart"></i>Favorites</li>
+        <li><i class="fa-solid fa-box"></i>My orders</li>
+      </ul>
+      <hr />
+      <ul class="menu-list">
+        <li><i class="fa-solid fa-globe"></i>English | USD</li>
+        <li><i class="fa-regular fa-message"></i>Contact us</li>
+        <li><i class="fa-solid fa-circle-info"></i>About</li>
+      </ul>
+      <hr />
+      <ul class="bottom-links">
+        <li>User agreement</li>
+        <li>Partnership</li>
+        <li>Privacy policy</li>
+      </ul>
+    </div>
+    <!-- header -->
     <header>
       <div class="brandname">
+        <i id="munuitem" onclick="opensidebar()" class="fa-solid fa-bars"></i>
         <a href="index.html">
           <img src="assets/layout/Brand/logo-colored.png" alt="" />
         </a>
@@ -44,25 +67,40 @@
       <div class="navbar">
         <ul>
           <li>
-            <i class="fa-solid fa-user allicons"></i>
-            <a href="index.html">Profile</a>
+            <a href="index.html" class="navlink">
+              <i class="fa-solid fa-user allicons"></i>
+              <span>Profile</span>
+            </a>
           </li>
           <li>
-            <i class="fa-solid fa-message allicons"></i>
-            <a href="product.html">Message</a>
+            <a href="product.html" class="navlink">
+              <i class="fa-solid fa-message allicons"></i>
+              <span>Message</span>
+            </a>
           </li>
           <li>
-            <i class="fa-solid fa-heart allicons"></i>
-            <a href="details.html">Order</a>
+            <a href="details.html" class="navlink">
+              <i class="fa-solid fa-heart allicons"></i>
+              <span>Order</span>
+            </a>
           </li>
           <li>
-            <i class="fa-solid fa-cart-shopping allicons"></i>
-            <a href="detailpart.html">My Cart</a>
+            <a href="detailpart.html" class="navlink">
+              <i class="fa-solid fa-cart-shopping allicons"></i>
+              <span>My Cart</span>
+            </a>
           </li>
         </ul>
       </div>
     </header>
-
+    <!-- media query sech bar -->
+    <input
+      id="searchbar"
+      type="text"
+      name="serachfield"
+      class="valuefield"
+      placeholder="Search"
+    />
     <!-- nav -->
     <nav>
       <div class="rightnav">
@@ -695,5 +733,18 @@
         </div>
       </div>
     </footer>
+    <!-- js open side bar -->
+    <script>
+      let sidebar = document.querySelector(".mobile-sidebar");
+      let menuBtn = document.getElementById("munuitem");
+
+      function opensidebar() {
+        sidebar.style.transform = "translateX(0)";
+      }
+
+      function closesidebar() {
+        sidebar.style.transform = "translateX(-100%)";
+      }
+    </script>
   </body>
 </html>
