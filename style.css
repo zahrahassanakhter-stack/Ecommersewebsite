@@ -82,6 +82,7 @@ header {
   color: var(--color);
   font-size: 15px;
   display: flex;
+  gap: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -104,7 +105,12 @@ header {
   align-items: center;
   justify-content: center;
   margin-left: 20px;
+  gap: 20px;
 }
+.brandname .fa-bars {
+  font-size: 18px;
+}
+
 /* nav */
 nav {
   max-width: var(--max-width);
@@ -1666,7 +1672,7 @@ footer {
     margin: 10px;
     width: 100%;
     max-width: var(--max-width);
-    overflow-x: scroll;
+    overflow-x: hidden;
     scrollbar-width: none;
     margin: auto;
   }
@@ -1805,7 +1811,7 @@ footer {
   }
   .home-item {
     width: 140px;
-
+    height: 160px;
     position: relative;
   }
   .home-item img {
@@ -1815,14 +1821,16 @@ footer {
   }
   .home-item p {
     position: absolute;
-    left: 10px;
-    top: 85px;
-    text-align: center;
+    left: 20px;
+    top: 100px;
   }
   .home-item span {
     position: absolute;
     left: 20px;
-    top: 105px;
+    top: 120px;
+  }
+  .home-item span br {
+    display: none;
   }
   .sourcenow {
     display: block;
@@ -1831,7 +1839,7 @@ footer {
     color: #0d6efd;
     margin: 20px;
   }
-  br {
+  .home-bg br {
     display: none;
   }
   /* electronic accesories{ */
@@ -1841,7 +1849,7 @@ footer {
     max-width: var(--max-width);
     margin: 10px 0;
     padding: 0;
-    height: 257px;
+    height: 270px;
     align-items: flex-start;
   }
   .consumer-bg {
@@ -1863,10 +1871,12 @@ footer {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(1, 1fr);
     overflow-x: scroll;
+
     scrollbar-width: none;
   }
   .consumers-item {
     width: 140px;
+    height: 160px;
     position: relative;
   }
   .consumers-item img {
@@ -1874,15 +1884,21 @@ footer {
     top: 5px;
     left: 20px;
   }
+  .consumer-bg br {
+    display: none;
+  }
   .consumers-item p {
     position: absolute;
     left: 20px;
-    top: 85px;
+    top: 100px;
   }
   .consumers-item span {
     position: absolute;
     left: 30px;
-    top: 105px;
+    top: 120px;
+  }
+  .consumers-item span br {
+    display: none;
   }
   .sourcenow {
     display: block;
@@ -2048,6 +2064,15 @@ footer {
     overflow-y: auto;
     display: block;
   }
+  .menu-list a,
+  .bottom-links a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
   .mobile-sidebar {
     width: 280px;
     min-height: 100vh;
@@ -2111,6 +2136,7 @@ footer {
     color: white;
     background: red;
     border-radius: 50%;
+    padding: 2px;
   }
   /* details about product*/
 

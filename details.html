@@ -11,6 +11,78 @@
     ></script>
   </head>
   <body>
+    <!-- side bar in mobile view section -->
+    <div class="mobile-sidebar">
+      <div class="user-section">
+        <div class="user-icon">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <p>
+          <a href="#">Sign in</a> |
+          <a href="#">Register</a>
+        </p>
+        <i class="fa-solid fa-xmark" onclick="closesidebar()"></i>
+      </div>
+      <ul class="menu-list">
+        <li>
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="product.html">
+            <i class="fa-solid fa-list"></i>
+            Categories
+          </a>
+        </li>
+        <li>
+          <a href="productgrid.html">
+            <i class="fa-regular fa-heart"></i>
+            Favorites
+          </a>
+        </li>
+        <li>
+          <a href="details.html">
+            <i class="fa-solid fa-box"></i>
+            My Orders
+          </a>
+        </li>
+        <li>
+          <a href="detailpart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            My Cart
+          </a>
+        </li>
+      </ul>
+      <hr />
+      <ul class="menu-list">
+        <li>
+          <a href="index.html">
+            <i class="fa-solid fa-globe"></i>
+            English | USD
+          </a>
+        </li>
+        <li>
+          <a href="details.html">
+            <i class="fa-regular fa-message"></i>
+            Contact us
+          </a>
+        </li>
+        <li>
+          <a href="product.html">
+            <i class="fa-solid fa-circle-info"></i>
+            About
+          </a>
+        </li>
+      </ul>
+      <hr />
+      <ul class="bottom-links">
+        <li><a href="#">User agreement</a></li>
+        <li><a href="#">Partnership</a></li>
+        <li><a href="#">Privacy policy</a></li>
+      </ul>
+    </div>
     <!-- header section -->
     <header>
       <div class="brandname">
@@ -527,6 +599,17 @@
       sendBtn.addEventListener("click", function () {
         alert("Inquiry Sent Successfully!");
       });
+
+      let sidebar = document.querySelector(".mobile-sidebar");
+      let menuBtn = document.getElementById("munuitem");
+
+      function opensidebar() {
+        sidebar.style.transform = "translateX(0)";
+      }
+
+      function closesidebar() {
+        sidebar.style.transform = "translateX(-100%)";
+      }
     </script>
   </body>
 </html>
