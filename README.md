@@ -24,7 +24,7 @@ This project recreates the interface of a modern online shopping website. It inc
 
 ## Repository
 
-https://github.com/zahrahassanakhter-stack/Ecommersewebsite
+https://zahrahassanakhter-stack.github.io/Ecommerce-Website/
 
 ## Author
 
